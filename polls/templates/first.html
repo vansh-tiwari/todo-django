@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div style="text-align: justify;">
+
+
+
+
+  <form action="" method="POST" class="form">
+    {% csrf_token %}
+<center>
+<table style="border: 2px; cellpadding:10; border-spacing: 15px;">
+
+  <tr><td>    Enter task: <input type="text" name="taskin" autofocus/>
+<input class="btn btn-success" name="taskadd" type="submit" value="Add"></td></tr>
+
+{% for todo in todoin %}
+
+<tr><td><input class="btn btn-danger btn-block" name="delete" type="submit" value="{{todo.item}}"></td></tr>
+
+{% endfor %}
+
+</table>
+</center>
+  </form>
+<br>
+
+
+</div>
+{% endblock %}

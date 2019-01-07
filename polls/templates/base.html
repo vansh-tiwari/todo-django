@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href= {% static 'css/basic.css' %} >
+  <link rel="stylesheet" type="text/css" href={% static 'css/fixed.css' %}>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<title>ToDO</title>
+
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">ToDo<span> Django App</span></a></h1>
+
+		<nav>
+			<!-- <a href="#">Home</a> -->
+			<!-- <a href="#" class="selected">Blog</a>
+			<a href="#">Pricing</a>
+			<a href="#">About</a>
+			<a href="#">Faq</a>
+			<a href="#">Contact</a> -->
+		</nav>
+
+	</div>
+
+</header>
+
+<div class="container">
+<br>
+<br>
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+
+</body>
+
+</html>
